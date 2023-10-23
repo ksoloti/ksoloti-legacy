@@ -5,7 +5,7 @@
 
 # Compiler options here.
 ifeq ($(USE_OPT),)
-  USE_OPT = -O2 -ggdb -fomit-frame-pointer -falign-functions=16 -fno-math-errno -Wno-unused-parameter
+  USE_OPT = -O2 -ggdb -fomit-frame-pointer -falign-functions=16 -fno-math-errno
 endif
 
 # C specific options here (added to USE_OPT).
@@ -159,7 +159,7 @@ CSRC = $(PORTSRC) \
        ${CMSIS}/DSP_Lib/Source/BasicMathFunctions/arm_shift_q15.c \
        ${CMSIS}/DSP_Lib/Source/BasicMathFunctions/arm_scale_f32.c \
        ${CMSIS}/DSP_Lib/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q31.c \
-	   ${CMSIS}/DSP_Lib/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f32.c \
+       ${CMSIS}/DSP_Lib/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f32.c \
        ${CMSIS}/DSP_Lib/Source/ComplexMathFunctions/arm_cmplx_mag_q31.c \
        ${CMSIS}/DSP_Lib/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q15.c \
        ${CMSIS}/DSP_Lib/Source/ComplexMathFunctions/arm_cmplx_mag_q15.c \
@@ -204,6 +204,8 @@ CSRC = $(PORTSRC) \
        ${FIRMWARE}/serial_midi.c \
        ${FIRMWARE}/bulk_usb.c \
        ${FIRMWARE}/midi_usb.c \
+       ${FIRMWARE}/spilink.c \
+       ${FIRMWARE}/spidb.c \
        ${FIRMWARE}/crc32.c \
        ${FIRMWARE}/exceptions.c \
        ${FIRMWARE}/watchdog.c \
@@ -286,7 +288,7 @@ CPPSRC = \
        ${MUTABLE_INSTRUMENTS}/stmlib/utils/random.cpp \
        ${MUTABLE_INSTRUMENTS}/mutable_resources.cpp \
        ${BRAIDS_SRC} \
-       ${WARPSS_SRC} \
+       ${WARPS_SRC} \
        ${ELEMENTS_SRC} \
        ${CLOUDS_SRC} \
        ${RINGS_SRC} \
@@ -367,7 +369,7 @@ AOPT =
 TOPT = -mthumb -DTHUMB
 
 # Define C warning options here
-CWARN = -Wall -Wextra -Wstrict-prototypes
+CWARN = -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter -Wno-strict-aliasing
 
 # Define C++ warning options here
 CPPWARN = -Wall -Wextra

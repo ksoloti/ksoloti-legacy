@@ -30,7 +30,7 @@
 #include "ui.h"
 
 #define SPILINK_BUFSIZE 16
-#define SPILINK_CHANNELS 4
+#define SPILINK_CHANNELS 6
 
 #define SPILINK_HEADER (('A' << 8) | ('x') | ('o' << 24) | ('<' << 16))
 #define SPILINK_FOOTER (('A' << 8) | ('x') | ('o' << 24) | ('>' << 16))
@@ -45,16 +45,17 @@ typedef struct {
 } spilink_channels_t;
 
 typedef struct {
-    uint32_t dummy1[5];
+    uint32_t dummy1[32];
     uint32_t header;
     uint32_t frameno;
     spilink_channels_t audio_io;
     uint32_t footer;
+    // uint32_t dummy2[24];
 } spilink_data_t;
 
 void spilink_init(bool_t isMaster);
 void spilink_clear_audio_tx(void);
-void spilink_disable(void);
+// void spilink_disable(void);
 
 extern Thread *pThreadSpilink;
 
