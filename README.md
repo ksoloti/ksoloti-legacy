@@ -4,7 +4,9 @@ based on Axoloti by Johannes Taelman
 
 johannes.taelman@gmail.com
 
-Fork  with firmware edits for the Ksoloti Core board
+Fork with firmware edits for the Ksoloti Core board
+
+# Note: This repository is not actively updated anymore. This repository contains the firmware you need when you want to use the original Axoloti patcher with your Ksoloti Core. However you won't be able to switch easily between using Ksoloti and Axoloti boards. The newer Ksoloti "standalone" patcher can be found [url]here[/url].
 
 ksoloti.axo@gmail.com
 
@@ -14,5 +16,3 @@ Axoloti is a platform for sketching music-DSP algorithms running on standalone h
 
 
 [Ksoloti website](http://ksoloti.github.io)
-
-(Outdated) documentation: in the folder doc/
