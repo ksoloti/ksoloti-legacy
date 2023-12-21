@@ -1,4 +1,4 @@
-# Ksoloti
+# ksoloti-legacy
 
 based on Axoloti by Johannes Taelman
 
