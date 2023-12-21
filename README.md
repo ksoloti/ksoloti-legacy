@@ -12,7 +12,22 @@ ksoloti.axo@gmail.com
 
 Axoloti is a platform for sketching music-DSP algorithms running on standalone hardware.
 
-[Axoloti website](http://www.axoloti.com)
-
 
 [Ksoloti website](http://ksoloti.github.io)
+
+
+[Ksoloti Core boards are available via Thonk](https://www.thonk.co.uk/shop/ksoloti-core-pcb)
+
+
+[Ksoloti on Instagram](https://instagram.com/ksoloti.axo/)
+
+
+[Ksoloti Discord Group](https://discord.com/invite/629kNnhj5R)
+
+
+[Axoloti Community Forum Backup](https://sebiik.github.io/community.axoloti.com.backup/)
+
+
+[Axoloti website](http://www.axoloti.com) (inactive?)
+
+
