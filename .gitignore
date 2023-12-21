@@ -4,11 +4,20 @@
 
 *.log
 firmware/.dep
-firmware/build
+firmware/build/lst
+firmware/build/obj
+firmware/build/axoloti.dmp
+firmware/build/axoloti.map
 firmware/flasher/.dep
-firmware/flasher/flasher_build
+firmware/flasher/flasher_build/lst
+firmware/flasher/flasher_build/obj
+firmware/flasher/flasher_build/flasher.dmp
+firmware/flasher/flasher_build/flasher.map
 firmware/mounter/.dep
-firmware/mounter/mounter_build
+firmware/mounter/mounter_build/lst
+firmware/mounter/mounter_build/obj
+firmware/mounter/mounter_build/mounter.dmp
+firmware/mounter/mounter_build/mounter.map
 control_firmware/build/*
 control_firmware/.dep
 portaudio-r1891-build/*
