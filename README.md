@@ -6,7 +6,7 @@ johannes.taelman@gmail.com
 
 Fork with firmware edits for the Ksoloti Core board
 
-# Note: This repository is not actively updated anymore. This repository contains the firmware you need when you want to use the original Axoloti patcher with your Ksoloti Core. However you won't be able to switch easily between using Ksoloti and Axoloti boards. The newer Ksoloti "standalone" patcher can be found [here](https://github.com/ksoloti/ksoloti).
+# Note: This repository is not actively updated anymore. This repository contains the firmware you need when you want to use the original Axoloti patcher with your Ksoloti Core. However you won't be able to switch easily between using Ksoloti and Axoloti boards. The updated Ksoloti "standalone" patcher can be found [here](https://github.com/ksoloti/ksoloti).
 
 ksoloti.axo@gmail.com
 
